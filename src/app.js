@@ -38,15 +38,10 @@ const PgStore = connectPgSimple(session);
 
 app.use(helmet());
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://room-booking-frontend-099r2zexk-thavatcaib77s-projects.vercel.app"
-    ],
-    credentials: true
-  })
-);
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
 
 app.options("*", cors());
 app.use(express.json());
