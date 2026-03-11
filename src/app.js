@@ -74,7 +74,8 @@ app.use(
     cookie: {
       secure: true,
       httpOnly: true,
-      sameSite: "none"
+      sameSite: "none",
+      maxAge: 7 * 24 * 60 * 60 * 1000
     }
   })
 );
@@ -87,7 +88,7 @@ app.use(passport.session());
 app.use('/api', apiLimiter);
 
 // ─── Routes ───────────────────────────────────────────
-app.use('/auth', authRouter);
+app.use('/api/auth', authRouter);
 app.use('/api/rooms', roomsRouter);
 app.use('/api/bookings', bookingsRouter);
 app.use('/api/notifications', notificationsRouter);
