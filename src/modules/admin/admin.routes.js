@@ -228,4 +228,54 @@ router.get('/reports/bookings', async (req, res, next) => {
     } catch (err) { next(err); }
 });
 
+
+// ─── Delete User ──────────────────────────────────────
+router.delete('/users/:id', async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        // ป้องกันลบตัวเอง
+        if (req.user.id === id)
+            return res.status(400).json({ error: 'ไม่สามารถลบบัญชีของตัวเองได้' });
+        // ป้องกันลบ super_admin คนอื่น
+        const target = await pool.query('SELECT role, full_name FROM users WHERE id=$1', [id]);
+        if (!target.rows.length) return res.status(404).json({ error: 'ไม่พบผู้ใช้' });
+        if (target.rows[0].role === 'super_admin')
+            return res.status(400).json({ error: 'ไม่สามารถลบ Super Admin ได้' });
+
+        await pool.query('DELETE FROM users WHERE id=$1', [id]);
+
+        // log
+        await pool.query(
+            `INSERT INTO system_logs (actor_id, action, target_type, target_id, detail)
+             VALUES ($1,'delete_user','user',$2,$3)`,
+            [req.user.id, id, JSON.stringify({ name: target.rows[0].full_name })]
+        ).catch(() => {});
+
+        res.json({ message: `ลบผู้ใช้ "${target.rows[0].full_name}" สำเร็จ` });
+    } catch (err) { next(err); }
+});
+
+// ─── System Logs ──────────────────────────────────────
+router.get('/logs', async (req, res, next) => {
+    try {
+        const { limit = 50, offset = 0, action } = req.query;
+        let query = `
+            SELECT l.*, u.full_name AS actor_name, u.email AS actor_email, u.avatar_url AS actor_avatar
+            FROM system_logs l
+            LEFT JOIN users u ON u.id = l.actor_id
+            WHERE 1=1
+        `;
+        const params = [];
+        if (action) { params.push(action); query += ` AND l.action = $${params.length}`; }
+        query += ` ORDER BY l.created_at DESC LIMIT $${params.length+1} OFFSET $${params.length+2}`;
+        params.push(limit, offset);
+
+        const [rows, total] = await Promise.all([
+            pool.query(query, params),
+            pool.query(`SELECT COUNT(*) FROM system_logs ${action ? "WHERE action=$1" : ""}`, action ? [action] : []),
+        ]);
+        res.json({ logs: rows.rows, total: parseInt(total.rows[0].count) });
+    } catch (err) { next(err); }
+});
+
 export default router;

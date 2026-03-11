@@ -18,6 +18,18 @@ import {
     bookingRejectedTemplate,
 } from '../email/email.service.js';
 
+
+// helper: บันทึก system log
+async function syslog(pool, actorId, action, targetId, detail) {
+    try {
+        await pool.query(
+            `INSERT INTO system_logs (actor_id, action, target_type, target_id, detail)
+             VALUES ($1,$2,'booking',$3,$4)`,
+            [actorId, action, targetId, JSON.stringify(detail)]
+        );
+    } catch (_) {}
+}
+
 const router = express.Router();
 
 // ─── Schema ──────────────────────────────────────────
@@ -330,7 +342,7 @@ router.post('/', requireAuth, async (req, res, next) => {
             for (const admin of adminEmails.rows) {
                 sendEmail({
                     to:      admin.email,
-                    subject: `[MLii Room Reservation] มีคำขอใหม่: ${b.title}`,
+                    subject: `[จองห้อง] มีคำขอใหม่: ${b.title}`,
                     html:    newBookingRequestTemplate({
                         booking:  bookingInfo,
                         room:     room.rows[0].name,
@@ -343,7 +355,7 @@ router.post('/', requireAuth, async (req, res, next) => {
         // ส่ง confirm ให้ผู้จอง
         sendEmail({
             to:      req.user.email,
-            subject: `[MLii Room Reservation] รับคำขอแล้ว: ${b.title}`,
+            subject: `[จองห้อง] รับคำขอแล้ว: ${b.title}`,
             html:    bookingSubmittedTemplate({
                 booking:  bookingInfo,
                 room:     room.rows[0].name,
@@ -461,7 +473,7 @@ router.patch('/:id/approve', requireRoomAdmin, async (req, res, next) => {
         if (bookerResult.rows[0]) {
             sendEmail({
                 to:      bookerResult.rows[0].email,
-                subject: `[MLii Room Reservation] อนุมัติแล้ว: ${b.title}`,
+                subject: `[จองห้อง] อนุมัติแล้ว: ${b.title}`,
                 html:    bookingApprovedTemplate({
                     booking:  formatBookingInfo(b),
                     room:     b.room_name,
@@ -575,7 +587,7 @@ router.patch('/:id/reject', requireRoomAdmin, async (req, res, next) => {
         // ส่ง Email แจ้งผู้จองว่าถูกปฏิเสธ
         sendEmail({
             to:      b.user_email,
-            subject: `[MLii Room Reservation] ไม่ได้รับอนุมัติ: ${b.title}`,
+            subject: `[จองห้อง] ไม่ได้รับอนุมัติ: ${b.title}`,
             html:    bookingRejectedTemplate({
                 booking:  formatBookingInfo(b),
                 room:     b.room_name,

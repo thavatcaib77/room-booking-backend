@@ -43,4 +43,46 @@ router.post('/logout', requireAuth, (req, res, next) => {
     });
 });
 
+
+// ─── Demo Login (ข้าม Google OAuth) ──────────────────
+router.post('/demo-login', authLimiter, async (req, res, next) => {
+    try {
+        const DEMO_PASSWORD = process.env.DEMO_PASSWORD || 'mlii2025';
+        const { password } = req.body;
+
+        if (password !== DEMO_PASSWORD) {
+            return res.status(401).json({ error: 'รหัสผ่านไม่ถูกต้อง' });
+        }
+
+        // หา demo user หรือสร้างใหม่
+        const { pool } = await import('../../config/db.js');
+        let result = await pool.query(
+            'SELECT * FROM users WHERE email = $1',
+            ['demo@room-booking.local']
+        );
+
+        if (result.rows.length === 0) {
+            result = await pool.query(`
+                INSERT INTO users (google_id, email, full_name, avatar_url, role, is_active)
+                VALUES ($1, $2, $3, $4, $5, TRUE)
+                ON CONFLICT (email) DO UPDATE SET full_name = EXCLUDED.full_name
+                RETURNING *
+            `, ['demo-local', 'demo@room-booking.local', 'Demo User', null, 'staff']);
+        }
+
+        const demoUser = result.rows[0];
+
+        // สร้าง session เหมือน passport login
+        req.login(demoUser, (err) => {
+            if (err) return next(err);
+            res.json({ ok: true, user: {
+                id: demoUser.id,
+                email: demoUser.email,
+                full_name: demoUser.full_name,
+                role: demoUser.role,
+            }});
+        });
+    } catch (err) { next(err); }
+});
+
 export default router;

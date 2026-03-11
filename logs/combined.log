@@ -431,3 +431,162 @@
 2026-03-10 14:29:14 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
 2026-03-10 14:29:14 [[32minfo[39m] [DB] PostgreSQL connected ✓
 2026-03-10 14:29:20 [[31merror[39m] [Error] color_hex is not defined {"stack":"ReferenceError: color_hex is not defined\n    at file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:277:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-03-11 07:37:19 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:37:19 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:37:19 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:37:19 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:39:41 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 07:41:03 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:41:03 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:41:03 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:41:03 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:44:39 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:44:39 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:44:39 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:44:39 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:46:30 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:46:31 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:46:31 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:46:31 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:47:06 [[31merror[39m] [Error] null value in column "google_id" of relation "users" violates not-null constraint {"stack":"error: null value in column \"google_id\" of relation \"users\" violates not-null constraint\n    at C:\\Users\\thava\\Downloads\\Claude\\booking\\room-booking-backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/auth/auth.routes.js:65:22"}
+2026-03-11 07:47:19 [[31merror[39m] [Error] null value in column "google_id" of relation "users" violates not-null constraint {"stack":"error: null value in column \"google_id\" of relation \"users\" violates not-null constraint\n    at C:\\Users\\thava\\Downloads\\Claude\\booking\\room-booking-backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/auth/auth.routes.js:65:22"}
+2026-03-11 07:50:13 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:50:13 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:50:13 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:50:13 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:50:29 [[31merror[39m] [Error] null value in column "google_id" of relation "users" violates not-null constraint {"stack":"error: null value in column \"google_id\" of relation \"users\" violates not-null constraint\n    at C:\\Users\\thava\\Downloads\\Claude\\booking\\room-booking-backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/auth/auth.routes.js:65:22"}
+2026-03-11 07:51:56 [[32minfo[39m] Server running on port 3000
+2026-03-11 07:51:56 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 07:51:56 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 07:51:56 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 07:59:41 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 07:59:53 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:00:06 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:00:09 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:00:11 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:04:45 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:05:32 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:07:37 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:07:39 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:07:47 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:08:04 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:11:54 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:13:18 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:19:58 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:20:02 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:20:52 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:20:52 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:20:52 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:20:52 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:21:11 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:21:45 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:30:32 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:30:32 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:30:32 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:30:32 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:30:56 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:30:56 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:30:56 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:30:56 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:31:55 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 08:34:56 [[31merror[39m] [Error] color_hex is not defined {"stack":"ReferenceError: color_hex is not defined\n    at file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:277:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-03-11 08:36:06 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:36:06 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:36:06 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:36:06 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:36:12 [[31merror[39m] [Error] color_hex is not defined {"stack":"ReferenceError: color_hex is not defined\n    at file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:277:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-03-11 08:36:37 [[31merror[39m] [Error] color_hex is not defined {"stack":"ReferenceError: color_hex is not defined\n    at file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:277:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-03-11 08:38:00 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:38:00 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:38:00 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:38:00 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:42:16 [[31merror[39m] [Error] column ra.created_at does not exist {"stack":"error: column ra.created_at does not exist\n    at C:\\Users\\thava\\Downloads\\Claude\\booking\\room-booking-backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:367:24"}
+2026-03-11 08:42:17 [[31merror[39m] [Error] column ra.created_at does not exist {"stack":"error: column ra.created_at does not exist\n    at C:\\Users\\thava\\Downloads\\Claude\\booking\\room-booking-backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///C:/Users/thava/Downloads/Claude/booking/room-booking-backend/src/modules/rooms/rooms.routes.js:367:24"}
+2026-03-11 08:45:19 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:45:19 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:45:19 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:45:19 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 08:48:29 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 08:48:29 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ถ่ายงาน" start=2026-03-12T02:00:00.000Z
+2026-03-11 08:48:30 [[32minfo[39m] [GCal] Event created OK: erqpl3bu089v244cp8ujt0f5u0 for thavatchai.boo@mfu.ac.th
+2026-03-11 08:48:30 [[32minfo[39m] [GCal] Event saved: erqpl3bu089v244cp8ujt0f5u0 for booking 595dd851-aae3-4dbd-8d16-3174a3a4f7b9
+2026-03-11 08:48:30 [[32minfo[39m] [Booking] New booking 595dd851-aae3-4dbd-8d16-3174a3a4f7b9 by thavatchai.boo@mfu.ac.th
+2026-03-11 08:48:32 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ถ่ายงาน (<368cfabe-7764-4aae-7ce2-4c3836f1a4ed@mfu.ac.th>)
+2026-03-11 08:57:05 [[32minfo[39m] Server running on port 3000
+2026-03-11 08:57:05 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 08:57:05 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 08:57:05 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ทดสอบการเลือกหลายวัน" start=2026-03-13T02:00:00.000Z
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ทดสอบการเลือกหลายวัน" start=2026-03-19T02:00:00.000Z
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:19:36 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ทดสอบการเลือกหลายวัน" start=2026-03-26T02:00:00.000Z
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event created OK: it40dor2eqnldengdo07or997g for thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event saved: it40dor2eqnldengdo07or997g for booking 9a73f169-f859-455c-b57b-7a4c6ae2e994
+2026-03-11 09:19:37 [[32minfo[39m] [Booking] New booking 9a73f169-f859-455c-b57b-7a4c6ae2e994 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event created OK: 3o0kpfhjfuv0cvqp34qgvgbhbk for thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event saved: 3o0kpfhjfuv0cvqp34qgvgbhbk for booking 2664bc73-4fed-4131-b23a-b0b2c8a41027
+2026-03-11 09:19:37 [[32minfo[39m] [Booking] New booking 2664bc73-4fed-4131-b23a-b0b2c8a41027 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event created OK: g5gn9glnqrrpb3f824tr5b5a7k for thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:37 [[32minfo[39m] [GCal] Event saved: g5gn9glnqrrpb3f824tr5b5a7k for booking 30af1af4-bfc9-4ebb-a84c-c597e643ea49
+2026-03-11 09:19:37 [[32minfo[39m] [Booking] New booking 30af1af4-bfc9-4ebb-a84c-c597e643ea49 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:19:39 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ทดสอบการเลือกหลายวัน (<6d713f81-1782-5b27-c197-f9280f4d2cb6@mfu.ac.th>)
+2026-03-11 09:19:39 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ทดสอบการเลือกหลายวัน (<15013b7b-cf99-d74e-09ed-f2927f865005@mfu.ac.th>)
+2026-03-11 09:19:39 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ทดสอบการเลือกหลายวัน (<691fe2c9-5f35-4632-e936-2fd2934091c1@mfu.ac.th>)
+2026-03-11 09:20:01 [[32minfo[39m] [GCal] User event deleted: 3o0kpfhjfuv0cvqp34qgvgbhbk
+2026-03-11 09:20:01 [[32minfo[39m] [Booking] Cancelled: 2664bc73-4fed-4131-b23a-b0b2c8a41027 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:20:04 [[32minfo[39m] [GCal] User event deleted: g5gn9glnqrrpb3f824tr5b5a7k
+2026-03-11 09:20:04 [[32minfo[39m] [Booking] Cancelled: 30af1af4-bfc9-4ebb-a84c-c597e643ea49 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:20:06 [[32minfo[39m] [GCal] User event deleted: it40dor2eqnldengdo07or997g
+2026-03-11 09:20:06 [[32minfo[39m] [Booking] Cancelled: 9a73f169-f859-455c-b57b-7a4c6ae2e994 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:20:09 [[32minfo[39m] [GCal] User event deleted: erqpl3bu089v244cp8ujt0f5u0
+2026-03-11 09:20:09 [[32minfo[39m] [Booking] Cancelled: 595dd851-aae3-4dbd-8d16-3174a3a4f7b9 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:21:50 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:21:50 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ทดสอบหน้า login" start=2026-03-12T02:00:00.000Z
+2026-03-11 09:21:51 [[32minfo[39m] [GCal] Event created OK: 8ad6prj4oor8rkeole9f5193no for thavatchai.boo@mfu.ac.th
+2026-03-11 09:21:51 [[32minfo[39m] [GCal] Event saved: 8ad6prj4oor8rkeole9f5193no for booking d5ca0d4b-3299-409f-b532-7aebb39831f1
+2026-03-11 09:21:51 [[32minfo[39m] [Booking] New booking d5ca0d4b-3299-409f-b532-7aebb39831f1 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:21:53 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ทดสอบหน้า login (<84678269-040d-983f-ebc0-5d9798116488@mfu.ac.th>)
+2026-03-11 09:22:44 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:24:28 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:24:28 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ทดสอบ" start=2026-03-27T06:00:00.000Z
+2026-03-11 09:24:28 [[32minfo[39m] [GCal] Event created OK: embh2jdkghs3ju40degpr41pcs for thavatchai.boo@mfu.ac.th
+2026-03-11 09:24:28 [[32minfo[39m] [GCal] Event saved: embh2jdkghs3ju40degpr41pcs for booking 6733a0b4-a52d-4e0c-9f2e-413ec3b7bc7a
+2026-03-11 09:24:28 [[32minfo[39m] [Booking] New booking 6733a0b4-a52d-4e0c-9f2e-413ec3b7bc7a by thavatchai.boo@mfu.ac.th
+2026-03-11 09:24:30 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ทดสอบ (<d701b1aa-5a52-0446-872d-9e8f76b13985@mfu.ac.th>)
+2026-03-11 09:25:11 [[32minfo[39m] [GCal] User event deleted: embh2jdkghs3ju40degpr41pcs
+2026-03-11 09:25:11 [[32minfo[39m] [Booking] Rejected: 6733a0b4-a52d-4e0c-9f2e-413ec3b7bc7a by thavatchai.boo@mfu.ac.th
+2026-03-11 09:25:13 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] ไม่ได้รับอนุมัติ: ทดสอบ (<5b1ec84e-bab6-7289-b803-0714e67e5134@mfu.ac.th>)
+2026-03-11 09:25:45 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:25:45 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] Meeting " start=2026-03-23T06:30:00.000Z
+2026-03-11 09:25:45 [[32minfo[39m] [GCal] Event created OK: nvmf61k4c3vhurqtd9o94vmpnc for thavatchai.boo@mfu.ac.th
+2026-03-11 09:25:45 [[32minfo[39m] [GCal] Event saved: nvmf61k4c3vhurqtd9o94vmpnc for booking 4f046567-0f6b-419c-8eea-f1a392565a2e
+2026-03-11 09:25:45 [[32minfo[39m] [Booking] New booking 4f046567-0f6b-419c-8eea-f1a392565a2e by thavatchai.boo@mfu.ac.th
+2026-03-11 09:25:47 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: Meeting  (<ff0b2e56-ed84-fc6a-8bf0-3a625e1620dd@mfu.ac.th>)
+2026-03-11 09:26:07 [[32minfo[39m] [GCal DEBUG] room_calendar_id = "null"
+2026-03-11 09:26:07 [[32minfo[39m] [GCal DEBUG] booker = thavatchai.boo@mfu.ac.th, has_access_token = true, has_refresh_token = true
+2026-03-11 09:26:07 [[32minfo[39m] [GCal DEBUG] gc_event_id_booker = "8ad6prj4oor8rkeole9f5193no"
+2026-03-11 09:26:07 [[32minfo[39m] [GCal DEBUG] SERVICE_ACCOUNT_JSON set = true
+2026-03-11 09:26:08 [[32minfo[39m] [GCal] User event updated: 8ad6prj4oor8rkeole9f5193no
+2026-03-11 09:26:08 [[32minfo[39m] [Booking] Approved: d5ca0d4b-3299-409f-b532-7aebb39831f1 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:26:10 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] อนุมัติแล้ว: ทดสอบหน้า login (<895aba1b-b332-7ff1-ef05-a1d75298ea24@mfu.ac.th>)
+2026-03-11 09:26:10 [[32minfo[39m] [GCal DEBUG] room_calendar_id = "null"
+2026-03-11 09:26:10 [[32minfo[39m] [GCal DEBUG] booker = thavatchai.boo@mfu.ac.th, has_access_token = true, has_refresh_token = true
+2026-03-11 09:26:10 [[32minfo[39m] [GCal DEBUG] gc_event_id_booker = "nvmf61k4c3vhurqtd9o94vmpnc"
+2026-03-11 09:26:10 [[32minfo[39m] [GCal DEBUG] SERVICE_ACCOUNT_JSON set = true
+2026-03-11 09:26:11 [[32minfo[39m] [GCal] User event updated: nvmf61k4c3vhurqtd9o94vmpnc
+2026-03-11 09:26:11 [[32minfo[39m] [Booking] Approved: 4f046567-0f6b-419c-8eea-f1a392565a2e by thavatchai.boo@mfu.ac.th
+2026-03-11 09:26:12 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] อนุมัติแล้ว: Meeting  (<d798a9a5-74c7-cf41-f9ea-c0282914cb8f@mfu.ac.th>)
+2026-03-11 09:26:58 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:33:38 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:36:10 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:40:42 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:41:17 [[32minfo[39m] [GCal] Creating event for booker thavatchai.boo@mfu.ac.th, has_access=true, has_refresh=true
+2026-03-11 09:41:17 [[32minfo[39m] [GCal] Inserting event: "[จองห้อง] ประชุม" start=2026-03-12T06:30:00.000Z
+2026-03-11 09:41:18 [[32minfo[39m] [GCal] Event created OK: ttfhmt69gjamu3p13ea8pkhnlk for thavatchai.boo@mfu.ac.th
+2026-03-11 09:41:18 [[32minfo[39m] [GCal] Event saved: ttfhmt69gjamu3p13ea8pkhnlk for booking fcc46f97-025a-4206-9725-8dc9fc3a6584
+2026-03-11 09:41:18 [[32minfo[39m] [Booking] New booking fcc46f97-025a-4206-9725-8dc9fc3a6584 by thavatchai.boo@mfu.ac.th
+2026-03-11 09:41:20 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ประชุม (<687cc11e-395f-6464-a6c0-e6d212f12b67@mfu.ac.th>)
+2026-03-11 09:43:54 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 09:55:22 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)

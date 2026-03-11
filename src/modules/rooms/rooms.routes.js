@@ -14,6 +14,7 @@ router.get('/managed/mine', requireRole('room_admin', 'super_admin'), async (req
     try {
         const result = await pool.query(`
             SELECT r.id, r.name, r.code, r.floor, r.capacity, r.status, r.description,
+                   r.color_hex, r.notify_admin_email, r.google_calendar_id,
                    r.building_id, bu.name AS building_name,
                    COALESCE(
                        JSON_AGG(JSONB_BUILD_OBJECT('id',a.id,'name',a.name,'icon',a.icon))
@@ -145,6 +146,7 @@ router.get('/', requireAuth, async (req, res, next) => {
         let query = `
             SELECT r.id, r.name, r.code, r.floor, r.capacity, r.status,
                    r.description, r.cover_image_url, r.building_id, r.allowed_booking_roles,
+                   r.color_hex, r.notify_admin_email, r.google_calendar_id,
                    bu.name AS building_name,
                    COALESCE(
                        JSON_AGG(JSONB_BUILD_OBJECT('id',a.id,'name',a.name,'icon',a.icon))
@@ -256,6 +258,7 @@ router.patch('/:id', requireRole('super_admin'), async (req, res, next) => {
     try {
         const { building_id, name, code, floor, capacity,
                 description, cover_image_url, google_calendar_id, allowed_booking_roles, status,
+                color_hex, notify_admin_email,
                 amenity_ids, operating_hours } = req.body;
 
         await client.query('BEGIN');
