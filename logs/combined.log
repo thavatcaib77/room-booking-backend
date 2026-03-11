@@ -595,3 +595,7 @@
 2026-03-11 10:52:31 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
 2026-03-11 10:52:31 [[32minfo[39m] [DB] PostgreSQL connected ✓
 2026-03-11 10:52:52 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 11:36:25 [[32minfo[39m] Server running on port 3000
+2026-03-11 11:36:25 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 11:36:25 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 11:36:26 [[32minfo[39m] [DB] PostgreSQL connected ✓
