@@ -29,6 +29,7 @@ import { startReminderCron } from './modules/email/emailReminder.cron.js';
 
 const app = express();
 const PgSession = connectPgSimple(session);
+const PgStore = connectPgSimple(session);
 
 // ─── Security & Parsing ───────────────────────────────
 app.use(helmet());
@@ -56,6 +57,23 @@ app.use(session({
     maxAge: 7 * 24 * 60 * 60 * 1000
   }
 }));
+
+app.use(
+  session({
+    store: new PgStore({
+      pool: pool,
+      tableName: "user_sessions",
+    }),
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: true,
+      httpOnly: true,
+      sameSite: "none"
+    }
+  })
+);
 
 // ─── Passport ─────────────────────────────────────────
 app.use(passport.initialize());
