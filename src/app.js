@@ -114,4 +114,8 @@ app.listen(PORT, "0.0.0.0", () => {
   startReminderCron();
 });
 
+process.on('uncaughtException', err => {
+  console.error('UNCAUGHT EXCEPTION:', err);
+});
+
 export default app;
