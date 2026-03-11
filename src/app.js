@@ -46,21 +46,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ─── Session (stored in PostgreSQL) ──────────────────
-app.use(session({
-  store: new PgSession({
-    pool,
-    tableName: 'user_sessions'
-  }),
-  secret: process.env.SESSION_SECRET || "dev-secret",
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    secure: process.env.NODE_ENV === 'production',
-    httpOnly: true,
-    maxAge: 7 * 24 * 60 * 60 * 1000
-  }
-}));
-
+// app.use(session({
+//   store: new PgSession({
+//     pool,
+//     tableName: 'user_sessions'
+//   }),
+//   secret: process.env.SESSION_SECRET || "dev-secret",
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     secure: process.env.NODE_ENV === 'production',
+//     httpOnly: true,
+//     maxAge: 7 * 24 * 60 * 60 * 1000
+//   }
+// }));
 app.use(
   session({
     store: new PgStore({
