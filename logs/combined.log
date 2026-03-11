@@ -590,3 +590,8 @@
 2026-03-11 09:41:20 [[32minfo[39m] [Email] Sent to thavatchai.boo@mfu.ac.th: [จองห้อง] รับคำขอแล้ว: ประชุม (<687cc11e-395f-6464-a6c0-e6d212f12b67@mfu.ac.th>)
 2026-03-11 09:43:54 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
 2026-03-11 09:55:22 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
+2026-03-11 10:52:31 [[32minfo[39m] Server running on port 3000
+2026-03-11 10:52:31 [[32minfo[39m] [HolidaySync] Cron jobs ตั้งค่าแล้ว
+2026-03-11 10:52:31 [[32minfo[39m] [Reminder] Cron job started (every 5 min)
+2026-03-11 10:52:31 [[32minfo[39m] [DB] PostgreSQL connected ✓
+2026-03-11 10:52:52 [[32minfo[39m] [Auth] User logged in: thavatchai.boo@mfu.ac.th (super_admin)
