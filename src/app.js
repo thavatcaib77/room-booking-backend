@@ -28,11 +28,14 @@ import { startHolidaySyncCron } from './modules/holidays/holidaySync.service.js'
 import { startReminderCron } from './modules/email/emailReminder.cron.js';
 
 const app = express();
-const PgSession = connectPgSimple(session);
+
+app.set("trust proxy", 1);
+
+//const PgSession = connectPgSimple(session);
 const PgStore = connectPgSimple(session);
 
 // ─── Security & Parsing ───────────────────────────────
-app.set("trust proxy", 1);
+
 app.use(helmet());
 
 app.use(
