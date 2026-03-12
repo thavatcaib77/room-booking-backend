@@ -88,7 +88,7 @@ app.use(passport.session());
 app.use('/api', apiLimiter);
 
 // ─── Routes ───────────────────────────────────────────
-app.use('/api/auth', authRouter);
+app.use('/auth', authRouter);
 app.use('/api/rooms', roomsRouter);
 app.use('/api/bookings', bookingsRouter);
 app.use('/api/notifications', notificationsRouter);
