@@ -131,6 +131,53 @@ router.get('/managed-rooms', requireRoomAdmin, async (req, res, next) => {
     } catch (err) { next(err); }
 });
 
+// ─── GET /api/bookings/room/:roomId — การจองของห้องนั้น ─────────
+router.get('/room/:roomId', requireRoomAdmin, async (req, res, next) => {
+    try {
+        const { roomId } = req.params;
+        const { status } = req.query;
+
+        const params = [roomId];
+        let query = `
+            SELECT
+                b.id,
+                b.title,
+                b.description,
+                b.start_time,
+                b.end_time,
+                b.status,
+                b.attendee_count,
+                b.created_at,
+                b.room_id,
+                u.full_name AS booked_by_name,
+                u.email     AS booked_by_email,
+                r.name      AS room_name,
+                r.code      AS room_code
+            FROM bookings b
+            JOIN users u ON u.id = b.booked_by
+            JOIN rooms r ON r.id = b.room_id
+            WHERE b.room_id = $1
+        `;
+
+        if (status) {
+            params.push(status);
+            query += ` AND b.status = $${params.length}`;
+        }
+
+        query += ` ORDER BY b.start_time DESC`;
+
+        const result = await pool.query(query, params);
+
+        res.json({
+            bookings: result.rows,
+            total: result.rowCount
+        });
+
+    } catch (err) {
+        next(err);
+    }
+});
+
 // ─── GET /api/bookings/calendar — ดูการจองตามช่วงวัน ─
 // ─── GET /api/bookings/public — ดู calendar แบบไม่ต้อง login ──
 router.get('/public', async (req, res, next) => {
