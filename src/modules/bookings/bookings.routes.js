@@ -481,11 +481,13 @@ router.patch('/:id/approve', requireRoomAdmin, async (req, res, next) => {
         const b = booking.rows[0];
 
         // ตรวจสิทธิ์ room_admin
+        // ตรวจสิทธิ์ room_admin
         if (req.user.role === 'room_admin') {
-            const isAdmin = await client.query(
-                'SELECT 1 FROM room_admins WHERE room_id = $1 AND user_id = $2',
-                [b.room_id, req.user.id]
-            );
+           const result = await pool.query(
+                `SELECT *
+                FROM bookings
+                WHERE ($1 = 'admin' OR room_id = $2)`, 
+                [req.user.role, req.user.room_id]); 
             if (!isAdmin.rowCount) return res.status(403).json({ error: 'คุณไม่ได้ดูแลห้องนี้' });
         }
 
